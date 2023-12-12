@@ -12,18 +12,18 @@ import pinterest from "../../images/icon-pinterest.svg";
 import twitter from "../../images/icon-twitter.svg";
 import working from "../../images/illustration-working.svg";
 import LayButton from "./LayButton";
-import { document } from "postcss";
+
 import axios from "axios";
 
-const getLocalStorage = () => {
-  let links = localStorage.getItem("links");
+// const getLocalStorage = () => {
+//   let links = localStorage.getItem("links");
 
-  if (links) {
-    return JSON.parse(localStorage.getItem("links"));
-  } else {
-    return [];
-  }
-};
+//   if (links) {
+//     return JSON.parse(localStorage.getItem("links"));
+//   } else {
+//     return [];
+//   }
+// };
 
 const LocalStorageCopy =(getLocalStorage) =>{
  const linksArray=getLocalStorage();
