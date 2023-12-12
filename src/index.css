@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,126 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.hero {
+  margin: 40px;
+}
+
+
+.hero__section__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header .navigation__links {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  gap: 2rem;
+  color: gray;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+header .login__signup {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 1.3rem;
+  color: gray;
+  font-weight: 500;
+  align-items: center;
+  vertical-align: middle;
+}
+
+header .login__signup button {
+  border-radius: 21px;
+  cursor: pointer;
+  background-color: rgb(3, 220, 220);
+  border: 0px;
+  width: 90px;
+  padding: 7px;
+  margin: 5px;
+  color: white;
+  font-weight: 500;
+}
+
+.hero__section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.hero__section .hero__section__text {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.hero__section .hero__section__text h1 {
+  font-weight: 700;
+  width: 100%;
+  color: hsl(257, 27%, 26%);
+  margin: 0px;
+  font-size: 65px;
+  line-height: 76px;
+
+
+}
+
+.hero__section .hero__section__text h6 {
+  font-weight: 500;
+  width: 100%;
+  color: gray;
+  font-size: 20px;
+  margin: 0px;
+
+}
+
+.get-started {
+  border-radius: 22px;
+  cursor: pointer;
+  background-color: rgb(3, 220, 220);
+  border: 0px;
+  width: 30%;
+  height: 3rem;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  align-self: flex-start;
+  margin-top: 1.8rem;
+}
+
+.hero__section .hero__section__image {
+  width: 50%;
+
+
+}
+
+.hero__section .hero__section__image img {
+  padding: 20px;
 }
